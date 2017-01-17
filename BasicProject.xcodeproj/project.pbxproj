@@ -29,6 +29,11 @@
 		668986481E2CC13F0068882D /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668986471E2CC13F0068882D /* MineViewController.m */; };
 		6689864C1E2CC3330068882D /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6689864B1E2CC3330068882D /* TabBarController.m */; };
 		6689864F1E2CC4E80068882D /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6689864E1E2CC4E80068882D /* MainNavigationController.m */; };
+		668986531E2DEE410068882D /* Navigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 668986521E2DEE410068882D /* Navigator.m */; };
+		668986561E2E227B0068882D /* Navigator+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 668986551E2E227B0068882D /* Navigator+Router.m */; };
+		668986591E2E24160068882D /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 668986581E2E24160068882D /* Router.m */; };
+		6689865D1E2E28AA0068882D /* AppDelegate+ThirdParty.m in Sources */ = {isa = PBXBuildFile; fileRef = 6689865C1E2E28AA0068882D /* AppDelegate+ThirdParty.m */; };
+		668986601E2E28F20068882D /* AppDelegate+CallBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6689865F1E2E28F20068882D /* AppDelegate+CallBack.m */; };
 		66D1CA1E1E2876D30037660E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1CA1D1E2876D30037660E /* main.m */; };
 		66D1CA211E2876D30037660E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1CA201E2876D30037660E /* AppDelegate.m */; };
 		66D1CA291E2876D30037660E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D1CA281E2876D30037660E /* Assets.xcassets */; };
@@ -81,6 +86,16 @@
 		6689864B1E2CC3330068882D /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		6689864D1E2CC4E80068882D /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
 		6689864E1E2CC4E80068882D /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
+		668986511E2DEE410068882D /* Navigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Navigator.h; sourceTree = "<group>"; };
+		668986521E2DEE410068882D /* Navigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Navigator.m; sourceTree = "<group>"; };
+		668986541E2E227B0068882D /* Navigator+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Navigator+Router.h"; sourceTree = "<group>"; };
+		668986551E2E227B0068882D /* Navigator+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Navigator+Router.m"; sourceTree = "<group>"; };
+		668986571E2E24160068882D /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		668986581E2E24160068882D /* Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
+		6689865B1E2E28AA0068882D /* AppDelegate+ThirdParty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ThirdParty.h"; sourceTree = "<group>"; };
+		6689865C1E2E28AA0068882D /* AppDelegate+ThirdParty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ThirdParty.m"; sourceTree = "<group>"; };
+		6689865E1E2E28F20068882D /* AppDelegate+CallBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+CallBack.h"; sourceTree = "<group>"; };
+		6689865F1E2E28F20068882D /* AppDelegate+CallBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+CallBack.m"; sourceTree = "<group>"; };
 		66D1CA191E2876D30037660E /* BasicProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D1CA1D1E2876D30037660E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66D1CA1F1E2876D30037660E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -144,6 +159,8 @@
 		668986081E2C55BC0068882D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				6689865A1E2E288D0068882D /* ThirdParty */,
+				668986501E2DEE180068882D /* Routes */,
 				668986091E2C55BC0068882D /* Placeholder */,
 			);
 			path = Helper;
@@ -333,6 +350,30 @@
 				6689864E1E2CC4E80068882D /* MainNavigationController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		668986501E2DEE180068882D /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				668986511E2DEE410068882D /* Navigator.h */,
+				668986521E2DEE410068882D /* Navigator.m */,
+				668986541E2E227B0068882D /* Navigator+Router.h */,
+				668986551E2E227B0068882D /* Navigator+Router.m */,
+				668986571E2E24160068882D /* Router.h */,
+				668986581E2E24160068882D /* Router.m */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		6689865A1E2E288D0068882D /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				6689865B1E2E28AA0068882D /* AppDelegate+ThirdParty.h */,
+				6689865C1E2E28AA0068882D /* AppDelegate+ThirdParty.m */,
+				6689865E1E2E28F20068882D /* AppDelegate+CallBack.h */,
+				6689865F1E2E28F20068882D /* AppDelegate+CallBack.m */,
+			);
+			path = ThirdParty;
 			sourceTree = "<group>";
 		};
 		66D1CA101E2876D30037660E = {
@@ -549,11 +590,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				66D1CA211E2876D30037660E /* AppDelegate.m in Sources */,
+				668986601E2E28F20068882D /* AppDelegate+CallBack.m in Sources */,
+				6689865D1E2E28AA0068882D /* AppDelegate+ThirdParty.m in Sources */,
 				66D1CA1E1E2876D30037660E /* main.m in Sources */,
 				6689864F1E2CC4E80068882D /* MainNavigationController.m in Sources */,
 				6689864C1E2CC3330068882D /* TabBarController.m in Sources */,
+				668986561E2E227B0068882D /* Navigator+Router.m in Sources */,
 				668986451E2CC1130068882D /* HomeViewController.m in Sources */,
 				668986481E2CC13F0068882D /* MineViewController.m in Sources */,
+				668986591E2E24160068882D /* Router.m in Sources */,
+				668986531E2DEE410068882D /* Navigator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

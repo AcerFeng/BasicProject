@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "MineViewController.h"
+#import "Navigator.h"
 
 @interface HomeViewController ()
 
@@ -23,7 +24,7 @@
     
     UIButton *jumpButton = [UIButton buttonWithType:UIButtonTypeCustom];
     jumpButton.backgroundColor = [UIColor redColor];
-    jumpButton.frame = CGRectMake(0, 0, 20, 20);
+    jumpButton.frame = CGRectMake(0, 0, 50, 20);
     
     [jumpButton setTitle:@"haha" forState:UIControlStateNormal];
     [jumpButton addTarget:self action:@selector(jump) forControlEvents:UIControlEventTouchUpInside];
@@ -32,8 +33,7 @@
 }
 
 - (void)jump {
-    NSLog(@"跳转");
-    [self.navigationController pushViewController:[[MineViewController alloc] init] animated:YES];
+    [[Navigator sharedNavigator] navPushViewController:[[MineViewController alloc] init] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

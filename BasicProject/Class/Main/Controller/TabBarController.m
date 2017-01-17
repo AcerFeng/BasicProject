@@ -10,26 +10,33 @@
 #import "MainNavigationController.h"
 #import "HomeViewController.h"
 #import "MineViewController.h"
+#import "Navigator.h"
 
-@interface TabBarController ()
+@interface TabBarController ()<UITabBarControllerDelegate>
 
 @end
 
 @implementation TabBarController
 
+#pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setupSubViewController];
+    [self lf_setupSubViewController];
+    __weak TabBarController *weakSelf = self;
+    self.delegate = weakSelf;
 }
 
-- (void)setupSubViewController {
+#pragma mark - private methods
+- (void)lf_setupSubViewController {
     // 1.添加第一个控制器
     HomeViewController *homeViewController = [[HomeViewController alloc] init];
     [self lf_addNavigationController:homeViewController image:[UIImage imageNamed:@"tab_home_icon"] title:@"首页"];
     
     MineViewController *mineViewController = [[MineViewController alloc] init];
     [self lf_addNavigationController:mineViewController image:[UIImage imageNamed:@"user"] title:@"我的"];
+    
+    [[Navigator sharedNavigator] setMainNavigationController:(UINavigationController *)[self.childViewControllers firstObject]];
 }
 
 - (void)lf_addNavigationController:(UIViewController *)controller image:(UIImage *)image title:(NSString *)title {
@@ -41,6 +48,13 @@
     [self addChildViewController:navC];
 }
 
-
+#pragma mark - UITabBarControllerDelegate
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    if (![viewController isKindOfClass:[UINavigationController class]]) {
+        NSLog(@"tabBar 出错");
+        return;
+    }
+    [[Navigator sharedNavigator] setMainNavigationController:(UINavigationController *)viewController];
+}
 
 @end
