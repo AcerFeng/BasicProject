@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  HomeViewController.h
 //  BasicProject
 //
-//  Created by lanfeng on 17/1/13.
+//  Created by lanfeng on 17/1/16.
 //  Copyright © 2017年 lanfeng. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HomeViewController : UIViewController
 
 @end
-
