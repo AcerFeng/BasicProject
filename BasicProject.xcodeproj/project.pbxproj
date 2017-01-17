@@ -34,6 +34,10 @@
 		668986591E2E24160068882D /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 668986581E2E24160068882D /* Router.m */; };
 		6689865D1E2E28AA0068882D /* AppDelegate+ThirdParty.m in Sources */ = {isa = PBXBuildFile; fileRef = 6689865C1E2E28AA0068882D /* AppDelegate+ThirdParty.m */; };
 		668986601E2E28F20068882D /* AppDelegate+CallBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6689865F1E2E28F20068882D /* AppDelegate+CallBack.m */; };
+		668986A81E2E5C9A0068882D /* TestModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668986A71E2E5C9A0068882D /* TestModuleViewController.m */; };
+		668986AB1E2E5D300068882D /* Target_testModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 668986AA1E2E5D300068882D /* Target_testModule.m */; };
+		668986B11E2E5FE80068882D /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668986B01E2E5FE80068882D /* BasicViewController.m */; };
+		668986B81E2E62700068882D /* Router+TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 668986B71E2E62700068882D /* Router+TestModule.m */; };
 		66D1CA1E1E2876D30037660E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1CA1D1E2876D30037660E /* main.m */; };
 		66D1CA211E2876D30037660E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1CA201E2876D30037660E /* AppDelegate.m */; };
 		66D1CA291E2876D30037660E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D1CA281E2876D30037660E /* Assets.xcassets */; };
@@ -96,6 +100,15 @@
 		6689865C1E2E28AA0068882D /* AppDelegate+ThirdParty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ThirdParty.m"; sourceTree = "<group>"; };
 		6689865E1E2E28F20068882D /* AppDelegate+CallBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+CallBack.h"; sourceTree = "<group>"; };
 		6689865F1E2E28F20068882D /* AppDelegate+CallBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+CallBack.m"; sourceTree = "<group>"; };
+		668986A61E2E5C9A0068882D /* TestModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModuleViewController.h; sourceTree = "<group>"; };
+		668986A71E2E5C9A0068882D /* TestModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModuleViewController.m; sourceTree = "<group>"; };
+		668986A91E2E5D300068882D /* Target_testModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_testModule.h; sourceTree = "<group>"; };
+		668986AA1E2E5D300068882D /* Target_testModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_testModule.m; sourceTree = "<group>"; };
+		668986AD1E2E5F340068882D /* RouterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterDelegate.h; sourceTree = "<group>"; };
+		668986AF1E2E5FE80068882D /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
+		668986B01E2E5FE80068882D /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
+		668986B61E2E62700068882D /* Router+TestModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Router+TestModule.h"; sourceTree = "<group>"; };
+		668986B71E2E62700068882D /* Router+TestModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Router+TestModule.m"; sourceTree = "<group>"; };
 		66D1CA191E2876D30037660E /* BasicProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D1CA1D1E2876D30037660E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66D1CA1F1E2876D30037660E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -141,6 +154,7 @@
 			children = (
 				668986061E2C55BC0068882D /* Base */,
 				668986081E2C55BC0068882D /* Helper */,
+				668986A31E2E5C520068882D /* TestModule */,
 				668986421E2C65F70068882D /* Main */,
 				6689860A1E2C55BC0068882D /* Home */,
 				668986131E2C55BC0068882D /* Me */,
@@ -151,6 +165,8 @@
 		668986061E2C55BC0068882D /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				668986AE1E2E5F8A0068882D /* Controller */,
+				668986AC1E2E5EFE0068882D /* Protocol */,
 				668986071E2C55BC0068882D /* Placeholder */,
 			);
 			path = Base;
@@ -355,6 +371,7 @@
 		668986501E2DEE180068882D /* Routes */ = {
 			isa = PBXGroup;
 			children = (
+				668986B21E2E61F10068882D /* Wireframes */,
 				668986511E2DEE410068882D /* Navigator.h */,
 				668986521E2DEE410068882D /* Navigator.m */,
 				668986541E2E227B0068882D /* Navigator+Router.h */,
@@ -374,6 +391,59 @@
 				6689865F1E2E28F20068882D /* AppDelegate+CallBack.m */,
 			);
 			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		668986A31E2E5C520068882D /* TestModule */ = {
+			isa = PBXGroup;
+			children = (
+				668986A41E2E5C520068882D /* Action */,
+				668986A51E2E5C520068882D /* ViewController */,
+			);
+			path = TestModule;
+			sourceTree = "<group>";
+		};
+		668986A41E2E5C520068882D /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				668986A91E2E5D300068882D /* Target_testModule.h */,
+				668986AA1E2E5D300068882D /* Target_testModule.m */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		668986A51E2E5C520068882D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				668986A61E2E5C9A0068882D /* TestModuleViewController.h */,
+				668986A71E2E5C9A0068882D /* TestModuleViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		668986AC1E2E5EFE0068882D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				668986AD1E2E5F340068882D /* RouterDelegate.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		668986AE1E2E5F8A0068882D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				668986AF1E2E5FE80068882D /* BasicViewController.h */,
+				668986B01E2E5FE80068882D /* BasicViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		668986B21E2E61F10068882D /* Wireframes */ = {
+			isa = PBXGroup;
+			children = (
+				668986B61E2E62700068882D /* Router+TestModule.h */,
+				668986B71E2E62700068882D /* Router+TestModule.m */,
+			);
+			path = Wireframes;
 			sourceTree = "<group>";
 		};
 		66D1CA101E2876D30037660E = {
@@ -595,9 +665,13 @@
 				66D1CA1E1E2876D30037660E /* main.m in Sources */,
 				6689864F1E2CC4E80068882D /* MainNavigationController.m in Sources */,
 				6689864C1E2CC3330068882D /* TabBarController.m in Sources */,
+				668986A81E2E5C9A0068882D /* TestModuleViewController.m in Sources */,
 				668986561E2E227B0068882D /* Navigator+Router.m in Sources */,
 				668986451E2CC1130068882D /* HomeViewController.m in Sources */,
+				668986AB1E2E5D300068882D /* Target_testModule.m in Sources */,
+				668986B81E2E62700068882D /* Router+TestModule.m in Sources */,
 				668986481E2CC13F0068882D /* MineViewController.m in Sources */,
+				668986B11E2E5FE80068882D /* BasicViewController.m in Sources */,
 				668986591E2E24160068882D /* Router.m in Sources */,
 				668986531E2DEE410068882D /* Navigator.m in Sources */,
 			);

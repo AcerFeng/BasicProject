@@ -6,7 +6,7 @@
 //  Copyright © 2017年 lanfeng. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Router : NSObject
 +(instancetype)sharedRouter;

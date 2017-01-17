@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "MineViewController.h"
 #import "Navigator.h"
+#import "Router+TestModule.h"
 
 @interface HomeViewController ()
 
@@ -34,6 +35,26 @@
 
 - (void)jump {
     [[Navigator sharedNavigator] navPushViewController:[[MineViewController alloc] init] animated:YES];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    UIViewController *vc = [[Router sharedRouter] Router_testModuleViewController:@{@"test" : @"hello"}];
+//    
+//    [[Navigator sharedNavigator] navPushViewController:vc animated:YES];
+    
+    /* ------------------------ */
+//    [[Router sharedRouter] CTMediator_showAlertWithMessage:@"测试一下" cancelAction:^(NSDictionary *info) {
+//        NSLog(@"取消了");
+//    } confirmAction:^(NSDictionary *info) {
+//        //做你想做的事
+//        NSLog(@"hahhahahaha");
+//    }];
+    
+    /* ------------------------ */
+    // 成功页
+//    [[Router sharedRouter] CTMediator_presentImage:[UIImage imageNamed:@"1441594747553218"]];
+    // 失败页
+    [[Router sharedRouter] CTMediator_presentImage:nil];
 }
 
 - (void)didReceiveMemoryWarning {
