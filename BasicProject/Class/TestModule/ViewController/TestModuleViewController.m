@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view.
     self.title = @"测试模块";
     self.view.backgroundColor = [UIColor grayColor];
+//    [self changeStatusBarStyle:UIStatusBarStyleLightContent statusBarHidden:YES changeStatusBarAnimated:NO];
 }
 
 - (void)didReceiveMemoryWarning {

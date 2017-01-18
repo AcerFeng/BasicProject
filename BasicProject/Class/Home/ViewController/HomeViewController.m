@@ -38,9 +38,9 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    UIViewController *vc = [[Router sharedRouter] Router_testModuleViewController:@{@"test" : @"hello"}];
-//    
-//    [[Navigator sharedNavigator] navPushViewController:vc animated:YES];
+    UIViewController *vc = [[Router sharedRouter] Router_testModuleViewController:@{@"test" : @"hello"}];
+    
+    [[Navigator sharedNavigator] navPushViewController:vc animated:YES];
     
     /* ------------------------ */
 //    [[Router sharedRouter] CTMediator_showAlertWithMessage:@"测试一下" cancelAction:^(NSDictionary *info) {
@@ -54,7 +54,7 @@
     // 成功页
 //    [[Router sharedRouter] CTMediator_presentImage:[UIImage imageNamed:@"1441594747553218"]];
     // 失败页
-    [[Router sharedRouter] CTMediator_presentImage:nil];
+//    [[Router sharedRouter] CTMediator_presentImage:nil];
 }
 
 - (void)didReceiveMemoryWarning {
