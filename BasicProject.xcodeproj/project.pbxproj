@@ -38,6 +38,15 @@
 		668986AB1E2E5D300068882D /* Target_testModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 668986AA1E2E5D300068882D /* Target_testModule.m */; };
 		668986B11E2E5FE80068882D /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668986B01E2E5FE80068882D /* BasicViewController.m */; };
 		668986B81E2E62700068882D /* Router+TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 668986B71E2E62700068882D /* Router+TestModule.m */; };
+		66A104A81E35B50C009B9BDE /* NetworkModulesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104A71E35B50C009B9BDE /* NetworkModulesTest.m */; };
+		66A104D81E373889009B9BDE /* NSArray+AXNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104CB1E373889009B9BDE /* NSArray+AXNetworkingMethods.m */; };
+		66A104D91E373889009B9BDE /* NSDictionary+AXNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104CD1E373889009B9BDE /* NSDictionary+AXNetworkingMethods.m */; };
+		66A104DA1E373889009B9BDE /* NSMutableString+AXNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104CF1E373889009B9BDE /* NSMutableString+AXNetworkingMethods.m */; };
+		66A104DB1E37388A009B9BDE /* NSObject+AXNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104D11E373889009B9BDE /* NSObject+AXNetworkingMethods.m */; };
+		66A104DC1E37388A009B9BDE /* NSString+AXNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104D31E373889009B9BDE /* NSString+AXNetworkingMethods.m */; };
+		66A104DD1E37388A009B9BDE /* NSURLRequest+LFNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104D51E373889009B9BDE /* NSURLRequest+LFNetworkingMethods.m */; };
+		66A104DE1E37388A009B9BDE /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104D71E373889009B9BDE /* UIDevice+IdentifierAddition.m */; };
+		66A104E21E37391C009B9BDE /* LFUDIDGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104E11E37391C009B9BDE /* LFUDIDGenerator.m */; };
 		66D1CA1E1E2876D30037660E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1CA1D1E2876D30037660E /* main.m */; };
 		66D1CA211E2876D30037660E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1CA201E2876D30037660E /* AppDelegate.m */; };
 		66D1CA291E2876D30037660E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D1CA281E2876D30037660E /* Assets.xcassets */; };
@@ -111,6 +120,23 @@
 		668986B01E2E5FE80068882D /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
 		668986B61E2E62700068882D /* Router+TestModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Router+TestModule.h"; sourceTree = "<group>"; };
 		668986B71E2E62700068882D /* Router+TestModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Router+TestModule.m"; sourceTree = "<group>"; };
+		66A104A71E35B50C009B9BDE /* NetworkModulesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkModulesTest.m; sourceTree = "<group>"; };
+		66A104CA1E373889009B9BDE /* NSArray+AXNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+AXNetworkingMethods.h"; sourceTree = "<group>"; };
+		66A104CB1E373889009B9BDE /* NSArray+AXNetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+AXNetworkingMethods.m"; sourceTree = "<group>"; };
+		66A104CC1E373889009B9BDE /* NSDictionary+AXNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+AXNetworkingMethods.h"; sourceTree = "<group>"; };
+		66A104CD1E373889009B9BDE /* NSDictionary+AXNetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+AXNetworkingMethods.m"; sourceTree = "<group>"; };
+		66A104CE1E373889009B9BDE /* NSMutableString+AXNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+AXNetworkingMethods.h"; sourceTree = "<group>"; };
+		66A104CF1E373889009B9BDE /* NSMutableString+AXNetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+AXNetworkingMethods.m"; sourceTree = "<group>"; };
+		66A104D01E373889009B9BDE /* NSObject+AXNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AXNetworkingMethods.h"; sourceTree = "<group>"; };
+		66A104D11E373889009B9BDE /* NSObject+AXNetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AXNetworkingMethods.m"; sourceTree = "<group>"; };
+		66A104D21E373889009B9BDE /* NSString+AXNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AXNetworkingMethods.h"; sourceTree = "<group>"; };
+		66A104D31E373889009B9BDE /* NSString+AXNetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AXNetworkingMethods.m"; sourceTree = "<group>"; };
+		66A104D41E373889009B9BDE /* NSURLRequest+LFNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+LFNetworkingMethods.h"; sourceTree = "<group>"; };
+		66A104D51E373889009B9BDE /* NSURLRequest+LFNetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+LFNetworkingMethods.m"; sourceTree = "<group>"; };
+		66A104D61E373889009B9BDE /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		66A104D71E373889009B9BDE /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
+		66A104E01E37391C009B9BDE /* LFUDIDGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUDIDGenerator.h; sourceTree = "<group>"; };
+		66A104E11E37391C009B9BDE /* LFUDIDGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUDIDGenerator.m; sourceTree = "<group>"; };
 		66D1CA191E2876D30037660E /* BasicProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D1CA1D1E2876D30037660E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66D1CA1F1E2876D30037660E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -302,6 +328,20 @@
 		6689861D1E2C55BC0068882D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				66A104CA1E373889009B9BDE /* NSArray+AXNetworkingMethods.h */,
+				66A104CB1E373889009B9BDE /* NSArray+AXNetworkingMethods.m */,
+				66A104CC1E373889009B9BDE /* NSDictionary+AXNetworkingMethods.h */,
+				66A104CD1E373889009B9BDE /* NSDictionary+AXNetworkingMethods.m */,
+				66A104CE1E373889009B9BDE /* NSMutableString+AXNetworkingMethods.h */,
+				66A104CF1E373889009B9BDE /* NSMutableString+AXNetworkingMethods.m */,
+				66A104D01E373889009B9BDE /* NSObject+AXNetworkingMethods.h */,
+				66A104D11E373889009B9BDE /* NSObject+AXNetworkingMethods.m */,
+				66A104D21E373889009B9BDE /* NSString+AXNetworkingMethods.h */,
+				66A104D31E373889009B9BDE /* NSString+AXNetworkingMethods.m */,
+				66A104D41E373889009B9BDE /* NSURLRequest+LFNetworkingMethods.h */,
+				66A104D51E373889009B9BDE /* NSURLRequest+LFNetworkingMethods.m */,
+				66A104D61E373889009B9BDE /* UIDevice+IdentifierAddition.h */,
+				66A104D71E373889009B9BDE /* UIDevice+IdentifierAddition.m */,
 				6689861E1E2C55BC0068882D /* Placeholder */,
 			);
 			path = Category;
@@ -342,6 +382,7 @@
 		668986271E2C55BC0068882D /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				66A104DF1E373908009B9BDE /* UDIDGenerator */,
 				668986281E2C55BC0068882D /* Placeholder */,
 			);
 			path = Tool;
@@ -460,6 +501,15 @@
 			path = Wireframes;
 			sourceTree = "<group>";
 		};
+		66A104DF1E373908009B9BDE /* UDIDGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				66A104E01E37391C009B9BDE /* LFUDIDGenerator.h */,
+				66A104E11E37391C009B9BDE /* LFUDIDGenerator.m */,
+			);
+			path = UDIDGenerator;
+			sourceTree = "<group>";
+		};
 		66D1CA101E2876D30037660E = {
 			isa = PBXGroup;
 			children = (
@@ -512,6 +562,7 @@
 			children = (
 				66D1CA361E2876D30037660E /* BasicProjectTests.m */,
 				66D1CA381E2876D30037660E /* Info.plist */,
+				66A104A71E35B50C009B9BDE /* NetworkModulesTest.m */,
 			);
 			path = BasicProjectTests;
 			sourceTree = "<group>";
@@ -738,16 +789,24 @@
 				668986601E2E28F20068882D /* AppDelegate+CallBack.m in Sources */,
 				6689865D1E2E28AA0068882D /* AppDelegate+ThirdParty.m in Sources */,
 				66D1CA1E1E2876D30037660E /* main.m in Sources */,
+				66A104DA1E373889009B9BDE /* NSMutableString+AXNetworkingMethods.m in Sources */,
 				6689864F1E2CC4E80068882D /* MainNavigationController.m in Sources */,
+				66A104DE1E37388A009B9BDE /* UIDevice+IdentifierAddition.m in Sources */,
 				6689864C1E2CC3330068882D /* TabBarController.m in Sources */,
 				668986A81E2E5C9A0068882D /* TestModuleViewController.m in Sources */,
 				668986561E2E227B0068882D /* Navigator+Router.m in Sources */,
+				66A104DC1E37388A009B9BDE /* NSString+AXNetworkingMethods.m in Sources */,
+				66A104D81E373889009B9BDE /* NSArray+AXNetworkingMethods.m in Sources */,
 				668986451E2CC1130068882D /* HomeViewController.m in Sources */,
 				668986AB1E2E5D300068882D /* Target_testModule.m in Sources */,
 				668986B81E2E62700068882D /* Router+TestModule.m in Sources */,
 				668986481E2CC13F0068882D /* MineViewController.m in Sources */,
 				668986B11E2E5FE80068882D /* BasicViewController.m in Sources */,
+				66A104E21E37391C009B9BDE /* LFUDIDGenerator.m in Sources */,
 				668986591E2E24160068882D /* Router.m in Sources */,
+				66A104D91E373889009B9BDE /* NSDictionary+AXNetworkingMethods.m in Sources */,
+				66A104DB1E37388A009B9BDE /* NSObject+AXNetworkingMethods.m in Sources */,
+				66A104DD1E37388A009B9BDE /* NSURLRequest+LFNetworkingMethods.m in Sources */,
 				668986531E2DEE410068882D /* Navigator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -756,6 +815,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A104A81E35B50C009B9BDE /* NetworkModulesTest.m in Sources */,
 				66D1CA371E2876D30037660E /* BasicProjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

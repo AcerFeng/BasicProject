@@ -28,6 +28,8 @@ PODS:
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - UITableView+FDTemplateLayoutCell (1.4)
+  - YTKNetwork (2.0.1):
+    - AFNetworking (~> 3.0)
 
 DEPENDENCIES:
   - AFNetworking
@@ -37,6 +39,7 @@ DEPENDENCIES:
   - ReactiveCocoa (~> 2.5)
   - SDWebImage (from `git@git.wang-guanjia.com:pods/SDWebImage.git`, tag `3.8.2`)
   - UITableView+FDTemplateLayoutCell
+  - YTKNetwork
 
 EXTERNAL SOURCES:
   SDWebImage:
@@ -56,7 +59,8 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 321c894375d49c42396f2ca823465a702613c360
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+  YTKNetwork: f21ad2073b3353a11d257593a2859f2904bbec75
 
-PODFILE CHECKSUM: 875581c7fad94727de8afc5be09475a3e454c3d2
+PODFILE CHECKSUM: 7ea966080e37f1dd02e77251c791824ba1559d76
 
 COCOAPODS: 1.1.1
