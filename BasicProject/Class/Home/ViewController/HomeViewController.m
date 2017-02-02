@@ -10,9 +10,13 @@
 #import "MineViewController.h"
 #import "Navigator.h"
 #import "Router+TestModule.h"
+#import "NewsAPIRequest.h"
+#import "NewsReformer.h"
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NewsAPIRequest *newsAPIRequest;
+
 @end
 
 @implementation HomeViewController
@@ -31,6 +35,15 @@
     [jumpButton addTarget:self action:@selector(jump) forControlEvents:UIControlEventTouchUpInside];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:jumpButton];
+    
+    [self.newsAPIRequest startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+        NSLog(@"%@",request.responseJSONObject);
+        NSLog(@"%@", NSStringFromClass([request.responseJSONObject class]));
+        [self.newsAPIRequest fetchDataWithReformer:[[NewsReformer alloc] init]];
+//        [request.responseJSONObject writeToFile:@"/Users/lanfeng/Desktop/test.plist" atomically:YES];
+    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+        NSLog(@"请求失败！");
+    }];
 }
 
 - (void)jump {
@@ -73,6 +86,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     return nil;
+}
+
+#pragma mark - getters and setters
+- (NewsAPIRequest *)newsAPIRequest {
+    if (!_newsAPIRequest) {
+        _newsAPIRequest = [[NewsAPIRequest alloc] init];
+        
+    }
+    return _newsAPIRequest;
 }
 
 @end

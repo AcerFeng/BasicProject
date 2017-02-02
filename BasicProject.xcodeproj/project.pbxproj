@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		662659901E3CB48C00CDB04A /* BaseAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6626598F1E3CB48C00CDB04A /* BaseAPIManager.m */; };
+		6634F29B1E4389C100B5FADB /* NewsReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6634F29A1E4389C100B5FADB /* NewsReformer.m */; };
 		6689862D1E2C55BC0068882D /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 668986071E2C55BC0068882D /* Placeholder */; };
 		6689862E1E2C55BC0068882D /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 668986091E2C55BC0068882D /* Placeholder */; };
 		6689862F1E2C55BC0068882D /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 6689860C1E2C55BC0068882D /* Placeholder */; };
@@ -53,6 +55,7 @@
 		66D1CA2C1E2876D30037660E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D1CA2A1E2876D30037660E /* LaunchScreen.storyboard */; };
 		66D1CA371E2876D30037660E /* BasicProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1CA361E2876D30037660E /* BasicProjectTests.m */; };
 		66D1CA421E2876D30037660E /* BasicProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1CA411E2876D30037660E /* BasicProjectUITests.m */; };
+		66E593311E3F04D200E307D9 /* NewsAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E593301E3F04D200E307D9 /* NewsAPIRequest.m */; };
 		CA8F7EDBBEB1DC680E4BA983 /* libPods-BasicProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3031A274EC97A4BF2FF907 /* libPods-BasicProject.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +78,10 @@
 
 /* Begin PBXFileReference section */
 		047E0CC2BCCE3524294F3F44 /* Pods-BasicProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BasicProject/Pods-BasicProject.release.xcconfig"; sourceTree = "<group>"; };
+		6626598E1E3CB48C00CDB04A /* BaseAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAPIManager.h; sourceTree = "<group>"; };
+		6626598F1E3CB48C00CDB04A /* BaseAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAPIManager.m; sourceTree = "<group>"; };
+		6634F2991E4389C100B5FADB /* NewsReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsReformer.h; sourceTree = "<group>"; };
+		6634F29A1E4389C100B5FADB /* NewsReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsReformer.m; sourceTree = "<group>"; };
 		668986071E2C55BC0068882D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
 		668986091E2C55BC0068882D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
 		6689860C1E2C55BC0068882D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
@@ -150,6 +157,8 @@
 		66D1CA3D1E2876D30037660E /* BasicProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D1CA411E2876D30037660E /* BasicProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicProjectUITests.m; sourceTree = "<group>"; };
 		66D1CA431E2876D30037660E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66E5932F1E3F04D200E307D9 /* NewsAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsAPIRequest.h; sourceTree = "<group>"; };
+		66E593301E3F04D200E307D9 /* NewsAPIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsAPIRequest.m; sourceTree = "<group>"; };
 		D9E7B30A43A6BC5855D0AF34 /* Pods-BasicProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BasicProject/Pods-BasicProject.debug.xcconfig"; sourceTree = "<group>"; };
 		DD3031A274EC97A4BF2FF907 /* libPods-BasicProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BasicProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -189,6 +198,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		662659911E3CB53400CDB04A /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				66E5932F1E3F04D200E307D9 /* NewsAPIRequest.h */,
+				66E593301E3F04D200E307D9 /* NewsAPIRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		6634F2981E43899A00B5FADB /* Reformer */ = {
+			isa = PBXGroup;
+			children = (
+				6634F2991E4389C100B5FADB /* NewsReformer.h */,
+				6634F29A1E4389C100B5FADB /* NewsReformer.m */,
+			);
+			path = Reformer;
+			sourceTree = "<group>";
+		};
 		668986051E2C55BC0068882D /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +252,8 @@
 		6689860A1E2C55BC0068882D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				6634F2981E43899A00B5FADB /* Reformer */,
+				662659911E3CB53400CDB04A /* Request */,
 				6689860B1E2C55BC0068882D /* Model */,
 				6689860D1E2C55BC0068882D /* View */,
 				6689860F1E2C55BC0068882D /* ViewController */,
@@ -375,6 +404,8 @@
 			isa = PBXGroup;
 			children = (
 				668986261E2C55BC0068882D /* Placeholder */,
+				6626598E1E3CB48C00CDB04A /* BaseAPIManager.h */,
+				6626598F1E3CB48C00CDB04A /* BaseAPIManager.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -796,13 +827,16 @@
 				668986A81E2E5C9A0068882D /* TestModuleViewController.m in Sources */,
 				668986561E2E227B0068882D /* Navigator+Router.m in Sources */,
 				66A104DC1E37388A009B9BDE /* NSString+AXNetworkingMethods.m in Sources */,
+				662659901E3CB48C00CDB04A /* BaseAPIManager.m in Sources */,
 				66A104D81E373889009B9BDE /* NSArray+AXNetworkingMethods.m in Sources */,
 				668986451E2CC1130068882D /* HomeViewController.m in Sources */,
 				668986AB1E2E5D300068882D /* Target_testModule.m in Sources */,
 				668986B81E2E62700068882D /* Router+TestModule.m in Sources */,
+				6634F29B1E4389C100B5FADB /* NewsReformer.m in Sources */,
 				668986481E2CC13F0068882D /* MineViewController.m in Sources */,
 				668986B11E2E5FE80068882D /* BasicViewController.m in Sources */,
 				66A104E21E37391C009B9BDE /* LFUDIDGenerator.m in Sources */,
+				66E593311E3F04D200E307D9 /* NewsAPIRequest.m in Sources */,
 				668986591E2E24160068882D /* Router.m in Sources */,
 				66A104D91E373889009B9BDE /* NSDictionary+AXNetworkingMethods.m in Sources */,
 				66A104DB1E37388A009B9BDE /* NSObject+AXNetworkingMethods.m in Sources */,
