@@ -14,12 +14,12 @@
     return @"https://news-at.zhihu.com/api/4/news/latest";
 }
 
-- (YTKRequestMethod)requestMethod {
-    return YTKRequestMethodGET;
-}
+//- (YTKRequestMethod)requestMethod {
+//    return YTKRequestMethodPOST;
+//}
 
 - (id)requestArgument {
-    return nil;
+    return @{@"page" : @1};
 }
 
 @end

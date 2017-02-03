@@ -49,6 +49,7 @@
 		66A104DD1E37388A009B9BDE /* NSURLRequest+LFNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104D51E373889009B9BDE /* NSURLRequest+LFNetworkingMethods.m */; };
 		66A104DE1E37388A009B9BDE /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104D71E373889009B9BDE /* UIDevice+IdentifierAddition.m */; };
 		66A104E21E37391C009B9BDE /* LFUDIDGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104E11E37391C009B9BDE /* LFUDIDGenerator.m */; };
+		66A4876F1E4417D6008B51C6 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A4876E1E4417D6008B51C6 /* Logger.m */; };
 		66D1CA1E1E2876D30037660E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1CA1D1E2876D30037660E /* main.m */; };
 		66D1CA211E2876D30037660E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1CA201E2876D30037660E /* AppDelegate.m */; };
 		66D1CA291E2876D30037660E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D1CA281E2876D30037660E /* Assets.xcassets */; };
@@ -144,6 +145,8 @@
 		66A104D71E373889009B9BDE /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 		66A104E01E37391C009B9BDE /* LFUDIDGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUDIDGenerator.h; sourceTree = "<group>"; };
 		66A104E11E37391C009B9BDE /* LFUDIDGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUDIDGenerator.m; sourceTree = "<group>"; };
+		66A4876D1E4417D6008B51C6 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		66A4876E1E4417D6008B51C6 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
 		66D1CA191E2876D30037660E /* BasicProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D1CA1D1E2876D30037660E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66D1CA1F1E2876D30037660E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -242,6 +245,7 @@
 		668986081E2C55BC0068882D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				66A4876C1E4415D9008B51C6 /* LogComponents */,
 				6689865A1E2E288D0068882D /* ThirdParty */,
 				668986501E2DEE180068882D /* Routes */,
 				668986091E2C55BC0068882D /* Placeholder */,
@@ -541,6 +545,15 @@
 			path = UDIDGenerator;
 			sourceTree = "<group>";
 		};
+		66A4876C1E4415D9008B51C6 /* LogComponents */ = {
+			isa = PBXGroup;
+			children = (
+				66A4876D1E4417D6008B51C6 /* Logger.h */,
+				66A4876E1E4417D6008B51C6 /* Logger.m */,
+			);
+			path = LogComponents;
+			sourceTree = "<group>";
+		};
 		66D1CA101E2876D30037660E = {
 			isa = PBXGroup;
 			children = (
@@ -832,6 +845,7 @@
 				668986451E2CC1130068882D /* HomeViewController.m in Sources */,
 				668986AB1E2E5D300068882D /* Target_testModule.m in Sources */,
 				668986B81E2E62700068882D /* Router+TestModule.m in Sources */,
+				66A4876F1E4417D6008B51C6 /* Logger.m in Sources */,
 				6634F29B1E4389C100B5FADB /* NewsReformer.m in Sources */,
 				668986481E2CC13F0068882D /* MineViewController.m in Sources */,
 				668986B11E2E5FE80068882D /* BasicViewController.m in Sources */,
