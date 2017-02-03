@@ -7,12 +7,15 @@
 //
 
 #import "NewsReformer.h"
+#import "MJExtension.h"
+#import "LatestNews.h"
 
 @implementation NewsReformer
 - (id)manager:(BaseAPIManager *)manager reformData:(NSDictionary *)data {
     //转模型？传递字典、去model？
     //返回视图能够直接用于显示的数据
-    NSLog(@"-------hi-------");
-    return nil;
+//    NSLog(@"-------hi-------");
+    LatestNews *news = [LatestNews mj_objectWithKeyValues:data];
+    return news;
 }
 @end

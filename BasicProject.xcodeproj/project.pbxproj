@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6604D5791E447E6C000E86D3 /* LatestNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 6604D5781E447E6C000E86D3 /* LatestNews.m */; };
 		662659901E3CB48C00CDB04A /* BaseAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6626598F1E3CB48C00CDB04A /* BaseAPIManager.m */; };
 		6634F29B1E4389C100B5FADB /* NewsReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6634F29A1E4389C100B5FADB /* NewsReformer.m */; };
 		6689862D1E2C55BC0068882D /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 668986071E2C55BC0068882D /* Placeholder */; };
@@ -79,6 +80,8 @@
 
 /* Begin PBXFileReference section */
 		047E0CC2BCCE3524294F3F44 /* Pods-BasicProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BasicProject/Pods-BasicProject.release.xcconfig"; sourceTree = "<group>"; };
+		6604D5771E447E6C000E86D3 /* LatestNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestNews.h; sourceTree = "<group>"; };
+		6604D5781E447E6C000E86D3 /* LatestNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestNews.m; sourceTree = "<group>"; };
 		6626598E1E3CB48C00CDB04A /* BaseAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAPIManager.h; sourceTree = "<group>"; };
 		6626598F1E3CB48C00CDB04A /* BaseAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAPIManager.m; sourceTree = "<group>"; };
 		6634F2991E4389C100B5FADB /* NewsReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsReformer.h; sourceTree = "<group>"; };
@@ -270,6 +273,8 @@
 			isa = PBXGroup;
 			children = (
 				6689860C1E2C55BC0068882D /* Placeholder */,
+				6604D5771E447E6C000E86D3 /* LatestNews.h */,
+				6604D5781E447E6C000E86D3 /* LatestNews.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -850,6 +855,7 @@
 				668986481E2CC13F0068882D /* MineViewController.m in Sources */,
 				668986B11E2E5FE80068882D /* BasicViewController.m in Sources */,
 				66A104E21E37391C009B9BDE /* LFUDIDGenerator.m in Sources */,
+				6604D5791E447E6C000E86D3 /* LatestNews.m in Sources */,
 				66E593311E3F04D200E307D9 /* NewsAPIRequest.m in Sources */,
 				668986591E2E24160068882D /* Router.m in Sources */,
 				66A104D91E373889009B9BDE /* NSDictionary+AXNetworkingMethods.m in Sources */,

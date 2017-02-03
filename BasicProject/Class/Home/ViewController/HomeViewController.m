@@ -12,6 +12,7 @@
 #import "Router+TestModule.h"
 #import "NewsAPIRequest.h"
 #import "NewsReformer.h"
+#import "LatestNews.h"
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -39,7 +40,8 @@
     [self.newsAPIRequest startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
 //        NSLog(@"%@",request.responseJSONObject);
 //        NSLog(@"%@", NSStringFromClass([request.responseJSONObject class]));
-//        [self.newsAPIRequest fetchDataWithReformer:[[NewsReformer alloc] init]];
+        LatestNews *news = [self.newsAPIRequest fetchDataWithReformer:[[NewsReformer alloc] init]];
+        NSLog(@"%@", news);
 //        [request.responseJSONObject writeToFile:@"/Users/lanfeng/Desktop/test.plist" atomically:YES];
     } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
         NSLog(@"请求失败！");
