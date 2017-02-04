@@ -51,6 +51,7 @@
 		66A104DE1E37388A009B9BDE /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104D71E373889009B9BDE /* UIDevice+IdentifierAddition.m */; };
 		66A104E21E37391C009B9BDE /* LFUDIDGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104E11E37391C009B9BDE /* LFUDIDGenerator.m */; };
 		66A4876F1E4417D6008B51C6 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A4876E1E4417D6008B51C6 /* Logger.m */; };
+		66B2A1061E45DD340057A9B3 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2A1051E45DD340057A9B3 /* BaseViewModel.m */; };
 		66D1CA1E1E2876D30037660E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1CA1D1E2876D30037660E /* main.m */; };
 		66D1CA211E2876D30037660E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1CA201E2876D30037660E /* AppDelegate.m */; };
 		66D1CA291E2876D30037660E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D1CA281E2876D30037660E /* Assets.xcassets */; };
@@ -150,6 +151,9 @@
 		66A104E11E37391C009B9BDE /* LFUDIDGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUDIDGenerator.m; sourceTree = "<group>"; };
 		66A4876D1E4417D6008B51C6 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
 		66A4876E1E4417D6008B51C6 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		66B2A1021E45C3140057A9B3 /* BasicProjec-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BasicProjec-Prefix.pch"; sourceTree = "<group>"; };
+		66B2A1041E45DD340057A9B3 /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		66B2A1051E45DD340057A9B3 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
 		66D1CA191E2876D30037660E /* BasicProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D1CA1D1E2876D30037660E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66D1CA1F1E2876D30037660E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -238,6 +242,7 @@
 		668986061E2C55BC0068882D /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				66B2A1031E45C6E10057A9B3 /* ViewModel */,
 				668986AE1E2E5F8A0068882D /* Controller */,
 				668986AC1E2E5EFE0068882D /* Protocol */,
 				668986071E2C55BC0068882D /* Placeholder */,
@@ -559,6 +564,15 @@
 			path = LogComponents;
 			sourceTree = "<group>";
 		};
+		66B2A1031E45C6E10057A9B3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				66B2A1041E45DD340057A9B3 /* BaseViewModel.h */,
+				66B2A1051E45DD340057A9B3 /* BaseViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		66D1CA101E2876D30037660E = {
 			isa = PBXGroup;
 			children = (
@@ -602,6 +616,7 @@
 			isa = PBXGroup;
 			children = (
 				66D1CA1D1E2876D30037660E /* main.m */,
+				66B2A1021E45C3140057A9B3 /* BasicProjec-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -845,6 +860,7 @@
 				668986A81E2E5C9A0068882D /* TestModuleViewController.m in Sources */,
 				668986561E2E227B0068882D /* Navigator+Router.m in Sources */,
 				66A104DC1E37388A009B9BDE /* NSString+AXNetworkingMethods.m in Sources */,
+				66B2A1061E45DD340057A9B3 /* BaseViewModel.m in Sources */,
 				662659901E3CB48C00CDB04A /* BaseAPIManager.m in Sources */,
 				66A104D81E373889009B9BDE /* NSArray+AXNetworkingMethods.m in Sources */,
 				668986451E2CC1130068882D /* HomeViewController.m in Sources */,
@@ -1002,6 +1018,7 @@
 			baseConfigurationReference = D9E7B30A43A6BC5855D0AF34 /* Pods-BasicProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BasicProject/BasicProjec-Prefix.pch";
 				INFOPLIST_FILE = BasicProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lanfeng.www.BasicProject;
@@ -1014,6 +1031,7 @@
 			baseConfigurationReference = 047E0CC2BCCE3524294F3F44 /* Pods-BasicProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BasicProject/BasicProjec-Prefix.pch";
 				INFOPLIST_FILE = BasicProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lanfeng.www.BasicProject;

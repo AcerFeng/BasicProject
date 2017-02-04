@@ -17,6 +17,20 @@
 @implementation BasicViewController
 
 #pragma mark - life cycle
++ (instancetype)allocWithZone:(struct _NSZone *)zone {
+    BasicViewController *viewController = [super allocWithZone:zone];
+    
+    @weakify(viewController)
+    [[viewController rac_signalForSelector:@selector(viewDidLoad)] subscribeNext:^(id x) {
+        @strongify(viewController)
+        [viewController lf_addSubViews];
+        [viewController lf_bindViewModel];
+    }];
+    
+    return viewController;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -32,6 +46,15 @@
 - (void)dealloc {
     
     NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
+}
+
+#pragma mark - RAC
+- (void)lf_addSubViews {
+    
+}
+
+- (void)lf_bindViewModel {
+    
 }
 
 #pragma mark - system
