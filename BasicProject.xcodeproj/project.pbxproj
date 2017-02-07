@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6604D5791E447E6C000E86D3 /* LatestNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 6604D5781E447E6C000E86D3 /* LatestNews.m */; };
+		66108C9F1E48CA0800BC0974 /* NewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66108C9E1E48CA0800BC0974 /* NewsViewModel.m */; };
 		662659901E3CB48C00CDB04A /* BaseAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6626598F1E3CB48C00CDB04A /* BaseAPIManager.m */; };
 		6634F29B1E4389C100B5FADB /* NewsReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6634F29A1E4389C100B5FADB /* NewsReformer.m */; };
 		6689862D1E2C55BC0068882D /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 668986071E2C55BC0068882D /* Placeholder */; };
@@ -50,6 +51,8 @@
 		66A104DD1E37388A009B9BDE /* NSURLRequest+LFNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104D51E373889009B9BDE /* NSURLRequest+LFNetworkingMethods.m */; };
 		66A104DE1E37388A009B9BDE /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104D71E373889009B9BDE /* UIDevice+IdentifierAddition.m */; };
 		66A104E21E37391C009B9BDE /* LFUDIDGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104E11E37391C009B9BDE /* LFUDIDGenerator.m */; };
+		66A158AB1E4A31A900C6CBF0 /* NewsListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A158AA1E4A31A900C6CBF0 /* NewsListView.m */; };
+		66A158B01E4A322400C6CBF0 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A158AF1E4A322400C6CBF0 /* BaseView.m */; };
 		66A4876F1E4417D6008B51C6 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A4876E1E4417D6008B51C6 /* Logger.m */; };
 		66B2A1061E45DD340057A9B3 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2A1051E45DD340057A9B3 /* BaseViewModel.m */; };
 		66D1CA1E1E2876D30037660E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1CA1D1E2876D30037660E /* main.m */; };
@@ -83,6 +86,9 @@
 		047E0CC2BCCE3524294F3F44 /* Pods-BasicProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BasicProject/Pods-BasicProject.release.xcconfig"; sourceTree = "<group>"; };
 		6604D5771E447E6C000E86D3 /* LatestNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestNews.h; sourceTree = "<group>"; };
 		6604D5781E447E6C000E86D3 /* LatestNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestNews.m; sourceTree = "<group>"; };
+		66108C9C1E48C86F00BC0974 /* BaseViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModelProtocol.h; sourceTree = "<group>"; };
+		66108C9D1E48CA0800BC0974 /* NewsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewModel.h; sourceTree = "<group>"; };
+		66108C9E1E48CA0800BC0974 /* NewsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewModel.m; sourceTree = "<group>"; };
 		6626598E1E3CB48C00CDB04A /* BaseAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAPIManager.h; sourceTree = "<group>"; };
 		6626598F1E3CB48C00CDB04A /* BaseAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAPIManager.m; sourceTree = "<group>"; };
 		6634F2991E4389C100B5FADB /* NewsReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsReformer.h; sourceTree = "<group>"; };
@@ -149,6 +155,11 @@
 		66A104D71E373889009B9BDE /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 		66A104E01E37391C009B9BDE /* LFUDIDGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUDIDGenerator.h; sourceTree = "<group>"; };
 		66A104E11E37391C009B9BDE /* LFUDIDGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUDIDGenerator.m; sourceTree = "<group>"; };
+		66A158A91E4A31A900C6CBF0 /* NewsListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsListView.h; sourceTree = "<group>"; };
+		66A158AA1E4A31A900C6CBF0 /* NewsListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListView.m; sourceTree = "<group>"; };
+		66A158AD1E4A321000C6CBF0 /* ViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewProtocol.h; sourceTree = "<group>"; };
+		66A158AE1E4A322400C6CBF0 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		66A158AF1E4A322400C6CBF0 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		66A4876D1E4417D6008B51C6 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
 		66A4876E1E4417D6008B51C6 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
 		66B2A1021E45C3140057A9B3 /* BasicProjec-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BasicProjec-Prefix.pch"; sourceTree = "<group>"; };
@@ -242,6 +253,7 @@
 		668986061E2C55BC0068882D /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				66A158AC1E4A31EE00C6CBF0 /* View */,
 				66B2A1031E45C6E10057A9B3 /* ViewModel */,
 				668986AE1E2E5F8A0068882D /* Controller */,
 				668986AC1E2E5EFE0068882D /* Protocol */,
@@ -288,6 +300,8 @@
 			isa = PBXGroup;
 			children = (
 				6689860E1E2C55BC0068882D /* Placeholder */,
+				66A158A91E4A31A900C6CBF0 /* NewsListView.h */,
+				66A158AA1E4A31A900C6CBF0 /* NewsListView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +320,8 @@
 			isa = PBXGroup;
 			children = (
 				668986121E2C55BC0068882D /* Placeholder */,
+				66108C9D1E48CA0800BC0974 /* NewsViewModel.h */,
+				66108C9E1E48CA0800BC0974 /* NewsViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -555,6 +571,16 @@
 			path = UDIDGenerator;
 			sourceTree = "<group>";
 		};
+		66A158AC1E4A31EE00C6CBF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66A158AD1E4A321000C6CBF0 /* ViewProtocol.h */,
+				66A158AE1E4A322400C6CBF0 /* BaseView.h */,
+				66A158AF1E4A322400C6CBF0 /* BaseView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		66A4876C1E4415D9008B51C6 /* LogComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -567,6 +593,7 @@
 		66B2A1031E45C6E10057A9B3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				66108C9C1E48C86F00BC0974 /* BaseViewModelProtocol.h */,
 				66B2A1041E45DD340057A9B3 /* BaseViewModel.h */,
 				66B2A1051E45DD340057A9B3 /* BaseViewModel.m */,
 			);
@@ -851,6 +878,7 @@
 			files = (
 				66D1CA211E2876D30037660E /* AppDelegate.m in Sources */,
 				668986601E2E28F20068882D /* AppDelegate+CallBack.m in Sources */,
+				66A158AB1E4A31A900C6CBF0 /* NewsListView.m in Sources */,
 				6689865D1E2E28AA0068882D /* AppDelegate+ThirdParty.m in Sources */,
 				66D1CA1E1E2876D30037660E /* main.m in Sources */,
 				66A104DA1E373889009B9BDE /* NSMutableString+AXNetworkingMethods.m in Sources */,
@@ -868,12 +896,14 @@
 				668986B81E2E62700068882D /* Router+TestModule.m in Sources */,
 				66A4876F1E4417D6008B51C6 /* Logger.m in Sources */,
 				6634F29B1E4389C100B5FADB /* NewsReformer.m in Sources */,
+				66108C9F1E48CA0800BC0974 /* NewsViewModel.m in Sources */,
 				668986481E2CC13F0068882D /* MineViewController.m in Sources */,
 				668986B11E2E5FE80068882D /* BasicViewController.m in Sources */,
 				66A104E21E37391C009B9BDE /* LFUDIDGenerator.m in Sources */,
 				6604D5791E447E6C000E86D3 /* LatestNews.m in Sources */,
 				66E593311E3F04D200E307D9 /* NewsAPIRequest.m in Sources */,
 				668986591E2E24160068882D /* Router.m in Sources */,
+				66A158B01E4A322400C6CBF0 /* BaseView.m in Sources */,
 				66A104D91E373889009B9BDE /* NSDictionary+AXNetworkingMethods.m in Sources */,
 				66A104DB1E37388A009B9BDE /* NSObject+AXNetworkingMethods.m in Sources */,
 				66A104DD1E37388A009B9BDE /* NSURLRequest+LFNetworkingMethods.m in Sources */,

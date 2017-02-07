@@ -26,7 +26,5 @@
     return self;
 }
 
-- (void)lf_initialize {
-    
-}
+- (void)lf_initialize {}
 @end

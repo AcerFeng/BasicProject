@@ -13,10 +13,13 @@
 #import "NewsAPIRequest.h"
 #import "NewsReformer.h"
 #import "LatestNews.h"
+#import "NewsViewModel.h"
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NewsAPIRequest *newsAPIRequest;
+
+@property (nonatomic, strong) NewsViewModel *viewModel;
 
 @end
 
@@ -97,6 +100,13 @@
         
     }
     return _newsAPIRequest;
+}
+
+- (NewsViewModel *)viewModel {
+    if (!_viewModel) {
+        _viewModel = [[NewsViewModel alloc] init];
+    }
+    return _viewModel;
 }
 
 @end
