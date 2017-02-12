@@ -10,4 +10,8 @@
 
 @interface NewsViewModel : BaseViewModel
 
+@property (nonatomic, strong, readonly) NSArray *newsList;
+
+@property (nonatomic, strong, readonly) RACCommand *refreshDataCommand;
+@property (nonatomic, strong, readonly) RACCommand *netPageCommand;
 @end

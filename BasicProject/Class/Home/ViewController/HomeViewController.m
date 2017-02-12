@@ -49,6 +49,8 @@
     } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
         NSLog(@"请求失败！");
     }];
+    
+    [self.viewModel.refreshDataCommand execute:nil];
 }
 
 - (void)jump {
