@@ -35,6 +35,7 @@
         self.newsList = data[kNewsReformerListDataKey];
         self.testlist = data[kNewsReformerTopStoriesDataKey];
         
+        
     }];
 }
 

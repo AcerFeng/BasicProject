@@ -7,6 +7,7 @@
 //
 
 #import "Story.h"
+#import "MJExtension.h"
 
 @implementation Story
 + (NSDictionary *)mj_replacedKeyFromPropertyName {
@@ -14,4 +15,5 @@
              @"ID" : @"id"
              };
 }
+
 @end

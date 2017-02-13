@@ -7,7 +7,7 @@
 //
 
 #import "LatestNews.h"
-//#import "MJExtension.h"
+#import "MJExtension.h"
 
 @implementation LatestNews
 + (NSDictionary *)mj_objectClassInArray
