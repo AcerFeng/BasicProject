@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Story : NSObject
-@property (nonatomic, strong) NSNumber *ID;
+@property (nonatomic, assign) NSInteger ID;
 
 @property (nonatomic, strong) NSString *title;
 

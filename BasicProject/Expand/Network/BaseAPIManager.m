@@ -16,16 +16,22 @@
 
 @implementation BaseAPIManager
 
+#pragma mark - life cycle
 - (instancetype)init {
     self = [super init];
     if (self) {
 #ifdef DEBUG
         //将自己添加 才能调用 YTKRequestAccessory 的方法
         //用于打印 request 信息
-        [self addAccessory:self];
+        __weak __typeof__(self) weakSelf = self;
+        [self addAccessory:weakSelf];
 #endif
     }
     return self;
+}
+
+- (void)dealloc {
+    [self stop];
 }
 
 #pragma mark - Public methods

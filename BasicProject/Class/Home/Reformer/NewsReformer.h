@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseAPIManager.h"
+#import "PropertyListNewsReformerKeys.h"
 
 @interface NewsReformer : NSObject<APIManagerDataReformer>
 

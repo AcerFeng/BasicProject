@@ -30,10 +30,10 @@
             NSLog(@"获取数据有误");
             return;
         }
-        NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+        
         NSDictionary *data = [self.newsAPIRequest fetchDataWithReformer:[[NewsReformer alloc] init]];
-        self.newsList = data[@"list"];
-        self.testlist = data[@"top_stories"];
+        self.newsList = data[kNewsReformerListDataKey];
+        self.testlist = data[kNewsReformerTopStoriesDataKey];
         
     }];
 }

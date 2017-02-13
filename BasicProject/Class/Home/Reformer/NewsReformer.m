@@ -10,6 +10,9 @@
 #import "MJExtension.h"
 #import "LatestNews.h"
 
+NSString * const kNewsReformerListDataKey = @"kLFNewsReformerListDataKey";
+NSString * const kNewsReformerTopStoriesDataKey = @"kNewsReformerTopStoriesDataKey";
+
 @implementation NewsReformer
 - (id)manager:(BaseAPIManager *)manager reformData:(NSDictionary *)data {
     //转模型？传递字典、去model？
@@ -18,8 +21,10 @@
 //    LatestNews *news = [LatestNews mj_objectWithKeyValues:data];
     NSMutableDictionary *mutDict = [NSMutableDictionary dictionaryWithDictionary:data];
     [mutDict removeObjectForKey:@"top_stories"];
+    LatestNews *news = [LatestNews mj_objectWithKeyValues:mutDict];
     NSMutableArray *mutArray = [NSMutableArray arrayWithCapacity:4];
-    [mutArray addObject:[mutDict copy]];
-    return @{@"list" : [mutArray copy] ? : @"", @"top_stories" : data[@"top_stories"] ? : @""};
+    [mutArray addObject:news];
+    
+    return @{kNewsReformerListDataKey : [mutArray copy] ? : @"", kNewsReformerTopStoriesDataKey : data[@"top_stories"] ? : @""};
 }
 @end

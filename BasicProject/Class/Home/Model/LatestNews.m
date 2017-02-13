@@ -7,13 +7,14 @@
 //
 
 #import "LatestNews.h"
+//#import "MJExtension.h"
 
 @implementation LatestNews
 + (NSDictionary *)mj_objectClassInArray
 {
     return @{
-             @"stories" : @"Story",
-             @"top_stories" : @"TopStory"
+             @"stories" : @"Story"
              };
 }
+
 @end
