@@ -10,13 +10,14 @@
 #import "MineViewController.h"
 #import "Navigator.h"
 #import "Router+TestModule.h"
-#import "NewsAPIRequest.h"
-#import "LatestNews.h"
 #import "NewsViewModel.h"
+#import "NewsTableViewCell.h"
+#import "UITableView+FDTemplateLayoutCell.h"
+#import "NewsListCellViewModel.h"
+#import "TableViewSectionViewModel.h"
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) NewsAPIRequest *newsAPIRequest;
 
 @property (nonatomic, strong) NewsViewModel *viewModel;
 
@@ -29,6 +30,10 @@
     // Do any additional setup after loading the view.
     [self.view setBackgroundColor:[UIColor yellowColor]];
     
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
     
     UIButton *jumpButton = [UIButton buttonWithType:UIButtonTypeCustom];
     jumpButton.backgroundColor = [UIColor redColor];
@@ -40,6 +45,14 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:jumpButton];
 
     [self.viewModel.refreshDataCommand execute:nil];
+}
+
+- (void)lf_bindViewModel {
+    @weakify(self);
+    [self.viewModel.refreshUI subscribeNext:^(id x) {
+        @strongify(self);
+        [self.tableView reloadData];
+    }];
 }
 
 - (void)jump {
@@ -68,36 +81,59 @@
 
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    TableViewSectionViewModel *sectionViewModel = self.viewModel.newsList[indexPath.section];
+    NewsListCellViewModel *viewModel = sectionViewModel.cellViewModels[indexPath.row];
     
-    return 44;
+    return [tableView fd_heightForCellWithIdentifier:NSStringFromClass([NewsTableViewCell class]) configuration:^(NewsTableViewCell *cell) {
+        [cell lf_bindViewModel:viewModel];
+    }];
 }
 
 #pragma mark - UITableViewDataSource
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return self.viewModel.newsList.count;
 }
 
-// Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-// Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    TableViewSectionViewModel *sectionViewModel = self.viewModel.newsList[section];
+    return sectionViewModel.cellViewModels.count;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    TableViewSectionViewModel *sectionViewModel = self.viewModel.newsList[indexPath.section];
+    NewsListCellViewModel *viewModel = sectionViewModel.cellViewModels[indexPath.row];
+    
+    NewsTableViewCell *newsCell = (NewsTableViewCell *)cell;
+    [newsCell lf_bindViewModel:viewModel];
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([NewsTableViewCell class])];
+    if (!cell) {
+        cell = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([NewsTableViewCell class]) owner:nil options:nil].firstObject;
+    }
+    return cell;
 }
 
+
+
 #pragma mark - getters and setters
-- (NewsAPIRequest *)newsAPIRequest {
-    if (!_newsAPIRequest) {
-        _newsAPIRequest = [[NewsAPIRequest alloc] init];
-        
-    }
-    return _newsAPIRequest;
-}
 
 - (NewsViewModel *)viewModel {
     if (!_viewModel) {
         _viewModel = [[NewsViewModel alloc] init];
     }
     return _viewModel;
+}
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] init];
+        [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([NewsTableViewCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([NewsTableViewCell class])];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+    }
+    return _tableView;
 }
 
 @end

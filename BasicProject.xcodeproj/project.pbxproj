@@ -11,6 +11,8 @@
 		66108C9F1E48CA0800BC0974 /* NewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66108C9E1E48CA0800BC0974 /* NewsViewModel.m */; };
 		662659901E3CB48C00CDB04A /* BaseAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6626598F1E3CB48C00CDB04A /* BaseAPIManager.m */; };
 		6636A47E1E51D1800076C304 /* NewsListCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6636A47D1E51D1800076C304 /* NewsListCellViewModel.m */; };
+		663DB3271E62B6DF003BA58E /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 663DB3251E62B6DF003BA58E /* NewsTableViewCell.m */; };
+		663DB3281E62B6DF003BA58E /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663DB3261E62B6DF003BA58E /* NewsTableViewCell.xib */; };
 		664836011E50B3A500870B08 /* TopStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 664836001E50B3A500870B08 /* TopStory.m */; };
 		664836041E50B61F00870B08 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 664836031E50B61F00870B08 /* Story.m */; };
 		6655CE0A1E61B9FF00F695CE /* TableViewSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6655CE091E61B9FF00F695CE /* TableViewSectionViewModel.m */; };
@@ -97,6 +99,9 @@
 		6626598F1E3CB48C00CDB04A /* BaseAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAPIManager.m; sourceTree = "<group>"; };
 		6636A47C1E51D1800076C304 /* NewsListCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsListCellViewModel.h; sourceTree = "<group>"; };
 		6636A47D1E51D1800076C304 /* NewsListCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListCellViewModel.m; sourceTree = "<group>"; };
+		663DB3241E62B6DF003BA58E /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		663DB3251E62B6DF003BA58E /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
+		663DB3261E62B6DF003BA58E /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		664835FF1E50B3A500870B08 /* TopStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopStory.h; sourceTree = "<group>"; };
 		664836001E50B3A500870B08 /* TopStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopStory.m; sourceTree = "<group>"; };
 		664836021E50B61F00870B08 /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
@@ -593,6 +598,9 @@
 		66A186A51E54A7E8003924FF /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				663DB3241E62B6DF003BA58E /* NewsTableViewCell.h */,
+				663DB3251E62B6DF003BA58E /* NewsTableViewCell.m */,
+				663DB3261E62B6DF003BA58E /* NewsTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -814,6 +822,7 @@
 				668986331E2C55BC0068882D /* Placeholder in Resources */,
 				6689863B1E2C55BC0068882D /* Placeholder in Resources */,
 				668986371E2C55BC0068882D /* Placeholder in Resources */,
+				663DB3281E62B6DF003BA58E /* NewsTableViewCell.xib in Resources */,
 				668986351E2C55BC0068882D /* Placeholder in Resources */,
 				668986381E2C55BC0068882D /* Placeholder in Resources */,
 				6689862E1E2C55BC0068882D /* Placeholder in Resources */,
@@ -908,6 +917,7 @@
 				668986A81E2E5C9A0068882D /* TestModuleViewController.m in Sources */,
 				668986561E2E227B0068882D /* Navigator+Router.m in Sources */,
 				66A104DC1E37388A009B9BDE /* NSString+AXNetworkingMethods.m in Sources */,
+				663DB3271E62B6DF003BA58E /* NewsTableViewCell.m in Sources */,
 				66B2A1061E45DD340057A9B3 /* BaseViewModel.m in Sources */,
 				662659901E3CB48C00CDB04A /* BaseAPIManager.m in Sources */,
 				66A104D81E373889009B9BDE /* NSArray+AXNetworkingMethods.m in Sources */,
@@ -1077,6 +1087,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lanfeng.www.BasicProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = " $(PODS_ROOT)";
 			};
 			name = Debug;
 		};
@@ -1090,6 +1101,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lanfeng.www.BasicProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = " $(PODS_ROOT)";
 			};
 			name = Release;
 		};

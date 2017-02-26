@@ -18,6 +18,7 @@
 
 @property (nonatomic, strong, readwrite) NSMutableArray *newsList;
 @property (nonatomic, strong) NSArray *testlist;
+@property (nonatomic, strong, readwrite) RACSubject *refreshUI;
 @property (nonatomic, strong, readwrite) RACCommand *refreshDataCommand;
 @property (nonatomic, strong, readwrite) RACCommand *nextPageCommand;
 
@@ -43,6 +44,7 @@
         [self.newsList removeAllObjects];
         [self.newsList addObject:sectionViewModel];;
         
+        [self.refreshUI sendNext:nil];
     }];
     
     [self.nextPageCommand.executionSignals.switchToLatest subscribeNext:^(id x) {
@@ -57,6 +59,16 @@
         _newsList = [NSMutableArray arrayWithCapacity:20];
     }
     return _newsList;
+}
+
+- (RACSubject *)refreshUI {
+    
+    if (!_refreshUI) {
+        
+        _refreshUI = [RACSubject subject];
+    }
+    
+    return _refreshUI;
 }
 
 - (RACCommand *)refreshDataCommand {

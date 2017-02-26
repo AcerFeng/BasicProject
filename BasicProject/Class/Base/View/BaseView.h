@@ -10,5 +10,5 @@
 #import "ViewProtocol.h"
 
 @interface BaseView : UIView<ViewProtocol>
-
+- (instancetype)initWithViewModel:(id)viewModel;
 @end

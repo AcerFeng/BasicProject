@@ -19,7 +19,7 @@
     return self;
 }
 
-- (instancetype)initWithViewModel:(id <BaseViewModelProtocol>)viewModel {
+- (instancetype)initWithViewModel:(id)viewModel {
     self = [super init];
     if (self) {
         [self lf_setupViews];
@@ -28,6 +28,7 @@
     return self;
 }
 
+- (void)lf_bindViewModel:(id)viewModel {}
 - (void)lf_bindViewModel {}
 - (void)lf_setupViews {}
 

@@ -8,11 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol BaseViewModelProtocol;
-
 @protocol ViewProtocol <NSObject>
-- (instancetype)initWithViewModel:(id <BaseViewModelProtocol>)viewModel;
 
-- (void)lf_bindViewModel;
-- (void)lf_setupViews;
+- (void)lf_bindViewModel:(id)viewModel;
+
 @end
