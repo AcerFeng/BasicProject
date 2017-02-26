@@ -56,7 +56,6 @@
 		66A104DD1E37388A009B9BDE /* NSURLRequest+LFNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104D51E373889009B9BDE /* NSURLRequest+LFNetworkingMethods.m */; };
 		66A104DE1E37388A009B9BDE /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104D71E373889009B9BDE /* UIDevice+IdentifierAddition.m */; };
 		66A104E21E37391C009B9BDE /* LFUDIDGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A104E11E37391C009B9BDE /* LFUDIDGenerator.m */; };
-		66A158AB1E4A31A900C6CBF0 /* NewsListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A158AA1E4A31A900C6CBF0 /* NewsListView.m */; };
 		66A158B01E4A322400C6CBF0 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A158AF1E4A322400C6CBF0 /* BaseView.m */; };
 		66A4876F1E4417D6008B51C6 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A4876E1E4417D6008B51C6 /* Logger.m */; };
 		66B2A1061E45DD340057A9B3 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2A1051E45DD340057A9B3 /* BaseViewModel.m */; };
@@ -170,8 +169,6 @@
 		66A104D71E373889009B9BDE /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 		66A104E01E37391C009B9BDE /* LFUDIDGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUDIDGenerator.h; sourceTree = "<group>"; };
 		66A104E11E37391C009B9BDE /* LFUDIDGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUDIDGenerator.m; sourceTree = "<group>"; };
-		66A158A91E4A31A900C6CBF0 /* NewsListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsListView.h; sourceTree = "<group>"; };
-		66A158AA1E4A31A900C6CBF0 /* NewsListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListView.m; sourceTree = "<group>"; };
 		66A158AD1E4A321000C6CBF0 /* ViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewProtocol.h; sourceTree = "<group>"; };
 		66A158AE1E4A322400C6CBF0 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		66A158AF1E4A322400C6CBF0 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
@@ -311,8 +308,6 @@
 			isa = PBXGroup;
 			children = (
 				6689860E1E2C55BC0068882D /* Placeholder */,
-				66A158A91E4A31A900C6CBF0 /* NewsListView.h */,
-				66A158AA1E4A31A900C6CBF0 /* NewsListView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -907,7 +902,6 @@
 			files = (
 				66D1CA211E2876D30037660E /* AppDelegate.m in Sources */,
 				668986601E2E28F20068882D /* AppDelegate+CallBack.m in Sources */,
-				66A158AB1E4A31A900C6CBF0 /* NewsListView.m in Sources */,
 				6689865D1E2E28AA0068882D /* AppDelegate+ThirdParty.m in Sources */,
 				66D1CA1E1E2876D30037660E /* main.m in Sources */,
 				66A104DA1E373889009B9BDE /* NSMutableString+AXNetworkingMethods.m in Sources */,
