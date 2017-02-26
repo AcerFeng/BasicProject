@@ -11,7 +11,6 @@
 #import "Navigator.h"
 #import "Router+TestModule.h"
 #import "NewsAPIRequest.h"
-#import "NewsReformer.h"
 #import "LatestNews.h"
 #import "NewsViewModel.h"
 
@@ -39,19 +38,7 @@
     [jumpButton addTarget:self action:@selector(jump) forControlEvents:UIControlEventTouchUpInside];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:jumpButton];
-    
-    NSLog(@"%ld", NSIntegerMax);
-    NSLog(@"%ld", NSIntegerMin);
-//    [self.newsAPIRequest startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
-////        NSLog(@"%@",request.responseJSONObject);
-////        NSLog(@"%@", NSStringFromClass([request.responseJSONObject class]));
-//        LatestNews *news = [self.newsAPIRequest fetchDataWithReformer:[[NewsReformer alloc] init]];
-//        NSLog(@"%@", news);
-////        [request.responseJSONObject writeToFile:@"/Users/lanfeng/Desktop/test.plist" atomically:YES];
-//    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
-//        NSLog(@"请求失败！");
-//    }];
-    
+
     [self.viewModel.refreshDataCommand execute:nil];
 }
 

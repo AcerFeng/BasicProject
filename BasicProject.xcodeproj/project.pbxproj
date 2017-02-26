@@ -10,7 +10,6 @@
 		6604D5791E447E6C000E86D3 /* LatestNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 6604D5781E447E6C000E86D3 /* LatestNews.m */; };
 		66108C9F1E48CA0800BC0974 /* NewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66108C9E1E48CA0800BC0974 /* NewsViewModel.m */; };
 		662659901E3CB48C00CDB04A /* BaseAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6626598F1E3CB48C00CDB04A /* BaseAPIManager.m */; };
-		6634F29B1E4389C100B5FADB /* NewsReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6634F29A1E4389C100B5FADB /* NewsReformer.m */; };
 		6636A47E1E51D1800076C304 /* NewsListCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6636A47D1E51D1800076C304 /* NewsListCellViewModel.m */; };
 		664836011E50B3A500870B08 /* TopStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 664836001E50B3A500870B08 /* TopStory.m */; };
 		664836041E50B61F00870B08 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 664836031E50B61F00870B08 /* Story.m */; };
@@ -96,9 +95,6 @@
 		66108C9E1E48CA0800BC0974 /* NewsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewModel.m; sourceTree = "<group>"; };
 		6626598E1E3CB48C00CDB04A /* BaseAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAPIManager.h; sourceTree = "<group>"; };
 		6626598F1E3CB48C00CDB04A /* BaseAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAPIManager.m; sourceTree = "<group>"; };
-		6634F2991E4389C100B5FADB /* NewsReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsReformer.h; sourceTree = "<group>"; };
-		6634F29A1E4389C100B5FADB /* NewsReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsReformer.m; sourceTree = "<group>"; };
-		6636A4681E5163FC0076C304 /* PropertyListNewsReformerKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyListNewsReformerKeys.h; sourceTree = "<group>"; };
 		6636A47C1E51D1800076C304 /* NewsListCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsListCellViewModel.h; sourceTree = "<group>"; };
 		6636A47D1E51D1800076C304 /* NewsListCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListCellViewModel.m; sourceTree = "<group>"; };
 		664835FF1E50B3A500870B08 /* TopStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopStory.h; sourceTree = "<group>"; };
@@ -244,16 +240,6 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
-		6634F2981E43899A00B5FADB /* Reformer */ = {
-			isa = PBXGroup;
-			children = (
-				6634F2991E4389C100B5FADB /* NewsReformer.h */,
-				6634F29A1E4389C100B5FADB /* NewsReformer.m */,
-				6636A4681E5163FC0076C304 /* PropertyListNewsReformerKeys.h */,
-			);
-			path = Reformer;
-			sourceTree = "<group>";
-		};
 		668986051E2C55BC0068882D /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,7 +279,6 @@
 		6689860A1E2C55BC0068882D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				6634F2981E43899A00B5FADB /* Reformer */,
 				662659911E3CB53400CDB04A /* Request */,
 				6689860B1E2C55BC0068882D /* Model */,
 				6689860D1E2C55BC0068882D /* View */,
@@ -931,7 +916,6 @@
 				668986B81E2E62700068882D /* Router+TestModule.m in Sources */,
 				6655CE0A1E61B9FF00F695CE /* TableViewSectionViewModel.m in Sources */,
 				66A4876F1E4417D6008B51C6 /* Logger.m in Sources */,
-				6634F29B1E4389C100B5FADB /* NewsReformer.m in Sources */,
 				66108C9F1E48CA0800BC0974 /* NewsViewModel.m in Sources */,
 				668986481E2CC13F0068882D /* MineViewController.m in Sources */,
 				6636A47E1E51D1800076C304 /* NewsListCellViewModel.m in Sources */,
