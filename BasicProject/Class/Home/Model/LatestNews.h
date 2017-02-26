@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @class Story;
+@class TopStory;
 @interface LatestNews : NSObject
 @property (nonatomic, strong) NSString *date;
 
 @property (nonatomic, strong) NSArray<Story *> *stories;
+@property (nonatomic, strong) NSArray<TopStory *> *top_stories;
 @end

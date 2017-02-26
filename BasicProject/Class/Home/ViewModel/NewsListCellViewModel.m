@@ -19,7 +19,11 @@
     if (self) {
         _model = model;
         
-        
+        self.ID = model.ID;
+        self.title = model.title;
+        self.type = model.type;
+        self.images = model.images;
+        self.ga_prefex = model.ga_prefix;
     }
     return self;
 }
@@ -27,7 +31,5 @@
 - (void)lf_initialize {
     
 }
-
-
 
 @end

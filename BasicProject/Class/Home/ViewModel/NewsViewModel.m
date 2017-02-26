@@ -8,15 +8,18 @@
 
 #import "NewsViewModel.h"
 #import "NewsAPIRequest.h"
-#import "NewsReformer.h"
+#import "TableViewSectionViewModel.h"
+#import "Story.h"
+#import "MJExtension.h"
+#import "NewsListCellViewModel.h"
 #import "LatestNews.h"
 
 @interface NewsViewModel ()
 
-@property (nonatomic, strong, readwrite) NSArray *newsList;
+@property (nonatomic, strong, readwrite) NSMutableArray *newsList;
 @property (nonatomic, strong) NSArray *testlist;
 @property (nonatomic, strong, readwrite) RACCommand *refreshDataCommand;
-@property (nonatomic, strong, readwrite) RACCommand *netPageCommand;
+@property (nonatomic, strong, readwrite) RACCommand *nextPageCommand;
 
 @property (nonatomic, strong) NewsAPIRequest *newsAPIRequest;
 @end
@@ -26,20 +29,36 @@
     @weakify(self);
     [self.refreshDataCommand.executionSignals.switchToLatest subscribeNext:^(NSDictionary *dict) {
         @strongify(self);
-        if (!dict.count || !dict[@"stories"] || !dict[@"top_stories"] || !dict[@"date"]) {
-            NSLog(@"获取数据有误");
-            return;
-        }
+        LatestNews *news = [LatestNews mj_objectWithKeyValues:dict];
         
-        NSDictionary *data = [self.newsAPIRequest fetchDataWithReformer:[[NewsReformer alloc] init]];
-        self.newsList = data[kNewsReformerListDataKey];
-        self.testlist = data[kNewsReformerTopStoriesDataKey];
+        NSArray *storiesViewModels = [news.stories.rac_sequence map:^id(Story *model) {
+            NewsListCellViewModel *viewModel = [[NewsListCellViewModel alloc] initWithModel:model];
+            return viewModel;
+        }].array;
         
+        TableViewSectionViewModel *sectionViewModel = [[TableViewSectionViewModel alloc] init];
+        sectionViewModel.headerTitle = news.date;
+        sectionViewModel.cellViewModels = storiesViewModels;
         
+        [self.newsList removeAllObjects];
+        [self.newsList addObject:sectionViewModel];;
+        
+    }];
+    
+    [self.nextPageCommand.executionSignals.switchToLatest subscribeNext:^(id x) {
+        @strongify(self);
+        [self.newsList addObject:x];
     }];
 }
 
 #pragma mark - getters and setters
+- (NSMutableArray *)newsList {
+    if (!_newsList) {
+        _newsList = [NSMutableArray arrayWithCapacity:20];
+    }
+    return _newsList;
+}
+
 - (RACCommand *)refreshDataCommand {
     if (!_refreshDataCommand) {
         @weakify(self);
@@ -59,6 +78,20 @@
         }];
     }
     return _refreshDataCommand;
+}
+
+- (RACCommand *)nextPageCommand {
+    if (!_nextPageCommand) {
+        @weakify(self);
+        _nextPageCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+            @strongify(self);
+            return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+                
+                return nil;
+            }];
+        }];
+    }
+    return _nextPageCommand;
 }
 
 - (NewsAPIRequest *)newsAPIRequest {

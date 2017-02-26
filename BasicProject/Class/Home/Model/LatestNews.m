@@ -13,7 +13,8 @@
 + (NSDictionary *)mj_objectClassInArray
 {
     return @{
-             @"stories" : @"Story"
+             @"stories" : @"Story",
+             @"top_stories" : @"TopStory"
              };
 }
 

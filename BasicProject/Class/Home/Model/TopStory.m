@@ -9,5 +9,9 @@
 #import "TopStory.h"
 
 @implementation TopStory
-
++ (NSDictionary *)mj_replacedKeyFromPropertyName {
+    return @{
+             @"ID" : @"id"
+             };
+}
 @end
