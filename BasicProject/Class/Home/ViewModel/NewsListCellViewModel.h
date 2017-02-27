@@ -9,9 +9,11 @@
 #import "BaseViewModel.h"
 
 @interface NewsListCellViewModel : BaseViewModel
-@property (nonatomic, assign) NSInteger ID;
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, assign) int type;
-@property (nonatomic, strong) NSArray<NSString *> *images;
-@property (nonatomic, strong) NSString *ga_prefex;
+
+@property (nonatomic, assign, readonly) NSInteger ID;
+@property (nonatomic, strong, readonly) NSString *title;
+@property (nonatomic, assign, readonly) int type;
+@property (nonatomic, strong, readonly) NSArray<NSString *> *images;
+@property (nonatomic, strong, readonly) NSString *ga_prefex;
+
 @end

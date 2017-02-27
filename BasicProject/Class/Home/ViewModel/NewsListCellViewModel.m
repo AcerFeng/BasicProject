@@ -11,6 +11,12 @@
 
 @interface NewsListCellViewModel ()
 @property (nonatomic, strong, readwrite) Story *model;
+
+@property (nonatomic, assign, readwrite) NSInteger ID;
+@property (nonatomic, strong, readwrite) NSString *title;
+@property (nonatomic, assign, readwrite) int type;
+@property (nonatomic, strong, readwrite) NSArray<NSString *> *images;
+@property (nonatomic, strong, readwrite) NSString *ga_prefex;
 @end
 
 @implementation NewsListCellViewModel

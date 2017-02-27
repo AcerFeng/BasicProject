@@ -73,7 +73,7 @@
     BOOL shouldLogError = error ? YES : NO;
     NSHTTPURLResponse *response = request.response;
     NSString *responseString = [[NSString alloc] initWithData:request.responseData encoding:NSUTF8StringEncoding];
-    NSMutableString *logString = [NSMutableString stringWithString:@"\n\n==============================================================\n=                        API Response                        =\n==============================================================\n\n"];
+    NSMutableString *logString = [NSMutableString stringWithString:@"\n\n==============================================================\n=                        API Response                        =\n\n\n"];
     
     [logString appendFormat:@"Status:\t%ld\t(%@)\n\n", (long)response.statusCode, [NSHTTPURLResponse localizedStringForStatusCode:response.statusCode]];
     [logString appendFormat:@"Content:\n\t%@\n\n", responseString];
@@ -99,7 +99,7 @@
     [logString appendURLRequest:request.currentRequest];
     
     
-    [logString appendFormat:@"\n\n==============================================================\n=                        Response End                        =\n==============================================================\n\n\n\n"];
+    [logString appendFormat:@"\n\n\n=                        Response End                        =\n==============================================================\n\n\n\n"];
     
     NSLog(@"%@", logString);
 #endif
