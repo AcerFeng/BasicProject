@@ -89,6 +89,11 @@
     }];
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    [[Router sharedRouter] CTMediator_presentImage:nil];
+    [[Router sharedRouter] CTMediator_presentImage:[UIImage imageNamed:@"1441594747553218"]];
+}
+
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return self.viewModel.newsList.count;
@@ -104,7 +109,8 @@
     NewsListCellViewModel *viewModel = sectionViewModel.cellViewModels[indexPath.row];
     
     NewsTableViewCell *newsCell = (NewsTableViewCell *)cell;
-    [newsCell lf_bindViewModel:viewModel];
+//    [newsCell lf_bindViewModel:viewModel];
+    newsCell.viewModel = viewModel;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

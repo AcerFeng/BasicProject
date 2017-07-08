@@ -13,7 +13,7 @@
 @interface NewsTableViewCell ()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *picImageView;
-@property (nonatomic, strong) NewsListCellViewModel *viewModel;
+
 @end
 
 @implementation NewsTableViewCell
@@ -21,6 +21,9 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+    RAC(self.titleLabel, text) = RACObserve(self, viewModel.title);
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -29,11 +32,18 @@
     // Configure the view for the selected state
 }
 
-- (void)lf_bindViewModel:(NewsListCellViewModel *)viewModel {
-    self.viewModel = viewModel;
+
+- (void)setViewModel:(NewsListCellViewModel *)viewModel {
+    _viewModel = viewModel;
     
-    self.titleLabel.text = viewModel.title;
     [self.picImageView sd_setImageWithURL:[NSURL URLWithString:viewModel.images.firstObject] placeholderImage:nil];
+}
+
+- (void)lf_bindViewModel:(NewsListCellViewModel *)viewModel {
+//    self.viewModel = viewModel;
+//    
+//    self.titleLabel.text = viewModel.title;
+    
     
 }
 

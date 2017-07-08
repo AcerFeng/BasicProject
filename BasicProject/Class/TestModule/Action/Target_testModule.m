@@ -7,6 +7,7 @@
 //
 
 #import "Target_testModule.h"
+#import "TestModuleViewController.h"
 
 typedef void (^CTUrlRouterCallbackBlock)(NSDictionary *info);
 

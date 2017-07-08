@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TestModuleViewController.h"
 
 @interface Target_testModule : NSObject
-- (TestModuleViewController *)Action_testModuleViewController:(NSDictionary *)parameters;
+- (UIViewController *)Action_testModuleViewController:(NSDictionary *)parameters;
 
 - (id)Action_showAlert:(NSDictionary *)params;
 

@@ -13,7 +13,6 @@
 		6636A47E1E51D1800076C304 /* NewsListCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6636A47D1E51D1800076C304 /* NewsListCellViewModel.m */; };
 		663DB3301E62D3E5003BA58E /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 663DB32C1E62D3E5003BA58E /* NewsTableViewCell.m */; };
 		663DB3311E62D3E5003BA58E /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663DB32D1E62D3E5003BA58E /* NewsTableViewCell.xib */; };
-		663DB3321E62D3E5003BA58E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 663DB32E1E62D3E5003BA58E /* HomeViewController.m */; };
 		663DB3351E62D46E003BA58E /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 663DB3341E62D46E003BA58E /* MineViewController.m */; };
 		663DB33A1E62D4CE003BA58E /* NewsAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 663DB3391E62D4CE003BA58E /* NewsAPIRequest.m */; };
 		663DB33F1E62D542003BA58E /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 663DB33C1E62D542003BA58E /* Placeholder */; };
@@ -21,11 +20,8 @@
 		664836011E50B3A500870B08 /* TopStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 664836001E50B3A500870B08 /* TopStory.m */; };
 		664836041E50B61F00870B08 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 664836031E50B61F00870B08 /* Story.m */; };
 		6655CE0A1E61B9FF00F695CE /* TableViewSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6655CE091E61B9FF00F695CE /* TableViewSectionViewModel.m */; };
+		666579621F10DF86007ED77C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666579601F10DF86007ED77C /* HomeViewController.m */; };
 		6689862D1E2C55BC0068882D /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 668986071E2C55BC0068882D /* Placeholder */; };
-		6689862E1E2C55BC0068882D /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 668986091E2C55BC0068882D /* Placeholder */; };
-		6689862F1E2C55BC0068882D /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 6689860C1E2C55BC0068882D /* Placeholder */; };
-		668986301E2C55BC0068882D /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 6689860E1E2C55BC0068882D /* Placeholder */; };
-		668986321E2C55BC0068882D /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 668986121E2C55BC0068882D /* Placeholder */; };
 		668986331E2C55BC0068882D /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 668986151E2C55BC0068882D /* Placeholder */; };
 		668986341E2C55BC0068882D /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 668986171E2C55BC0068882D /* Placeholder */; };
 		668986361E2C55BC0068882D /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 6689861B1E2C55BC0068882D /* Placeholder */; };
@@ -101,8 +97,6 @@
 		663DB32B1E62D3E5003BA58E /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
 		663DB32C1E62D3E5003BA58E /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
 		663DB32D1E62D3E5003BA58E /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
-		663DB32E1E62D3E5003BA58E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		663DB32F1E62D3E5003BA58E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		663DB3331E62D46E003BA58E /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		663DB3341E62D46E003BA58E /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		663DB3381E62D4CE003BA58E /* NewsAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsAPIRequest.h; sourceTree = "<group>"; };
@@ -115,11 +109,9 @@
 		664836031E50B61F00870B08 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
 		6655CE081E61B9FF00F695CE /* TableViewSectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewSectionViewModel.h; sourceTree = "<group>"; };
 		6655CE091E61B9FF00F695CE /* TableViewSectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewSectionViewModel.m; sourceTree = "<group>"; };
+		666579601F10DF86007ED77C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		666579611F10DF86007ED77C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		668986071E2C55BC0068882D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
-		668986091E2C55BC0068882D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
-		6689860C1E2C55BC0068882D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
-		6689860E1E2C55BC0068882D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
-		668986121E2C55BC0068882D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
 		668986151E2C55BC0068882D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
 		668986171E2C55BC0068882D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
 		6689861B1E2C55BC0068882D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
@@ -284,6 +276,15 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		6665795F1F10DF3A007ED77C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				666579611F10DF86007ED77C /* HomeViewController.h */,
+				666579601F10DF86007ED77C /* HomeViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		668986051E2C55BC0068882D /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,7 +316,6 @@
 				66A4876C1E4415D9008B51C6 /* LogComponents */,
 				6689865A1E2E288D0068882D /* ThirdParty */,
 				668986501E2DEE180068882D /* Routes */,
-				668986091E2C55BC0068882D /* Placeholder */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -323,6 +323,7 @@
 		6689860A1E2C55BC0068882D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				6665795F1F10DF3A007ED77C /* ViewController */,
 				663DB3361E62D4CE003BA58E /* DataManager */,
 				6689860B1E2C55BC0068882D /* Model */,
 				6689860D1E2C55BC0068882D /* View */,
@@ -334,7 +335,6 @@
 		6689860B1E2C55BC0068882D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6689860C1E2C55BC0068882D /* Placeholder */,
 				6604D5771E447E6C000E86D3 /* LatestNews.h */,
 				6604D5781E447E6C000E86D3 /* LatestNews.m */,
 				664835FF1E50B3A500870B08 /* TopStory.h */,
@@ -350,9 +350,6 @@
 			children = (
 				663DB3291E62D3E5003BA58E /* View */,
 				663DB32A1E62D3E5003BA58E /* Cell */,
-				663DB32E1E62D3E5003BA58E /* HomeViewController.m */,
-				663DB32F1E62D3E5003BA58E /* HomeViewController.h */,
-				6689860E1E2C55BC0068882D /* Placeholder */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -360,7 +357,6 @@
 		668986111E2C55BC0068882D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				668986121E2C55BC0068882D /* Placeholder */,
 				66108C9D1E48CA0800BC0974 /* NewsViewModel.h */,
 				66108C9E1E48CA0800BC0974 /* NewsViewModel.m */,
 				6636A47C1E51D1800076C304 /* NewsListCellViewModel.h */,
@@ -823,7 +819,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6689862F1E2C55BC0068882D /* Placeholder in Resources */,
 				6689863C1E2C55BC0068882D /* Placeholder in Resources */,
 				66D1CA2C1E2876D30037660E /* LaunchScreen.storyboard in Resources */,
 				668986361E2C55BC0068882D /* Placeholder in Resources */,
@@ -835,11 +830,8 @@
 				6689863B1E2C55BC0068882D /* Placeholder in Resources */,
 				668986371E2C55BC0068882D /* Placeholder in Resources */,
 				668986381E2C55BC0068882D /* Placeholder in Resources */,
-				6689862E1E2C55BC0068882D /* Placeholder in Resources */,
-				668986321E2C55BC0068882D /* Placeholder in Resources */,
 				6689863D1E2C55BC0068882D /* Placeholder in Resources */,
 				663DB33F1E62D542003BA58E /* Placeholder in Resources */,
-				668986301E2C55BC0068882D /* Placeholder in Resources */,
 				663DB3311E62D3E5003BA58E /* NewsTableViewCell.xib in Resources */,
 				668986391E2C55BC0068882D /* Placeholder in Resources */,
 				668986341E2C55BC0068882D /* Placeholder in Resources */,
@@ -933,13 +925,13 @@
 				66B2A1061E45DD340057A9B3 /* BaseViewModel.m in Sources */,
 				662659901E3CB48C00CDB04A /* BaseAPIManager.m in Sources */,
 				66A104D81E373889009B9BDE /* NSArray+AXNetworkingMethods.m in Sources */,
-				663DB3321E62D3E5003BA58E /* HomeViewController.m in Sources */,
 				668986AB1E2E5D300068882D /* Target_testModule.m in Sources */,
 				668986B81E2E62700068882D /* Router+TestModule.m in Sources */,
 				6655CE0A1E61B9FF00F695CE /* TableViewSectionViewModel.m in Sources */,
 				66A4876F1E4417D6008B51C6 /* Logger.m in Sources */,
 				66108C9F1E48CA0800BC0974 /* NewsViewModel.m in Sources */,
 				6636A47E1E51D1800076C304 /* NewsListCellViewModel.m in Sources */,
+				666579621F10DF86007ED77C /* HomeViewController.m in Sources */,
 				668986B11E2E5FE80068882D /* BasicViewController.m in Sources */,
 				66A104E21E37391C009B9BDE /* LFUDIDGenerator.m in Sources */,
 				6604D5791E447E6C000E86D3 /* LatestNews.m in Sources */,

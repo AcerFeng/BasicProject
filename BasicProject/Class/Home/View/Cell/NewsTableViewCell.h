@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ViewProtocol.h"
 
+@class NewsListCellViewModel;
 @interface NewsTableViewCell : UITableViewCell<ViewProtocol>
-
+@property (nonatomic, strong) NewsListCellViewModel *viewModel;
 @end
